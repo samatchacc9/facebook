@@ -1,0 +1,261 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-color:rgb(240, 242, 245);
+    /* position: relative;
+    padding-bottom: 58px; */
+    font-family: Helvetica, Arial, sans-serif;
+  }
+  
+ 
+  /* Create three unequal columns that floats next to each other */
+  section {
+      /* outline: 3px solid red; */
+      width: 90vw;
+      height: 100vh;
+     margin: 0 auto;
+  }
+
+  /* section .row .column.right  h2 {
+    text-align: center;
+  } */
+
+  .column {
+    float: left;
+    padding: 10px;
+  }
+  
+  /* left column */
+  .column.left {
+    width: 50%;
+    /* background-color: lightpink; */
+    /* border-right: 2px solid lime; */
+  }
+  
+  /* right column */
+  .column.right {  
+    width: 50%;
+   
+    /* background-color: lime; */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .control-right {
+    margin-top: 150px;
+      width: 65%;
+  }
+
+  section:last-child { /* ทำให้  margin-bottom ของarticle ไม่ยืดเกินจริง*/
+    margin-bottom: 0;
+}
+
+.column.left .content {
+    margin-top: 230px;
+    margin-left: 140px;
+}
+
+.content h1 {
+    font-size: 65px;
+    color: #1877F2;
+}
+
+.content h3 {
+    font-size: 34px;
+    font-weight: normal;
+    line-height: 32px;
+}
+
+.content .brandner {
+    margin-bottom: -42px;
+}
+
+
+/* form*/
+
+input[type=text] {
+    font-size: 19px;
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+ 
+.create-page {
+    font-size: 19px;
+    text-align: center;
+
+}
+
+.create-page a {
+    color: black;
+    text-decoration: none;
+}
+
+form .sub-link {
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid lightgray;
+}
+
+form .sub-link a {
+    text-align: center;
+    text-decoration:none;
+    color: #1877f2;   
+}
+
+form .sub-link a:hover {
+    text-decoration-style: 1px solid blue;
+    text-align: center;
+    color: #1876f2c9; 
+    text-decoration: underline;  
+}
+
+form {
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    background-color: #ffffff;
+    padding: 20px;
+  }
+  
+  .btn {
+    text-align: center;
+    border: none;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 22px;
+    line-height: 48px;
+    padding: 0 16px;
+    width:100%;
+}
+
+button.login {
+    background-color: #1877f2;
+}
+
+button.create {
+    background-color: #42b72a;
+    margin-top: 20px;
+    margin-left: 25%;
+    width: 50%;
+
+}
+
+
+button.login:hover {
+    background-color: #1670e5c5;  
+}
+
+button.create:hover {
+    background-color: #42b72ade;  
+}
+
+ /* Style the footer */
+ footer {
+   margin-top: -60px;
+    background-color: #FFFFFF;
+    padding: 10px;
+    text-align: center;
+    /* position: fixed; */
+    /* position: absolute; */
+    /* bottom: 0; */
+    width: 100%;
+  }
+
+  .control-footer {
+    margin: 0px 260px;
+    /* line-height: -5px; */
+    text-align: left;
+  }
+
+  .control-footer a {
+    text-decoration: none;
+    color: rgb(56, 88, 152);
+  }
+
+  .control-footer a:hover {
+    text-decoration: underline;
+  }
+
+  .footer-p1 {
+    margin: -10px 0px;
+    border-bottom: 0.5px solid lightgrey;
+    
+  }
+
+  .footer-p1 li {
+    list-style: none;
+    display: inline-block;
+    padding: 0px 5px;
+  }
+
+  .footer-p2 {
+    margin: -10px 0px;
+  }
+  .footer-p2 li {
+    /* line-height: 0px; */
+    margin-top: -30px;
+    list-style: none;
+    display: inline-block;
+    padding: 0px 7px;
+    
+  }
+  .footer-p3 {
+    margin: -10px 0px;
+  }
+  .footer-p3 li {
+    line-height: 0px;
+    list-style: none;
+    display: inline-block;
+    padding: 0px 7px;
+  }
+  .footer-p4 {
+    margin: 10px 0px;
+  }
+
+  .footer-p4 li {
+    line-height: 0px;
+    list-style: none;
+    display: inline-block;
+    padding: 0px 7px;
+
+  }
+
+  .footer-tail {
+    margin: 0px 45px;
+    color: rgb(115, 115, 115);
+    font-size: 13px;
+  }
+
+  button.btn-plus {
+    width: 40px;
+    /* height: 5px; */
+    background-color: #EBEDF0;
+    text-align: center;
+    border: none;
+    border-radius: 6px;
+    color: grey;
+    font-size: 22px;
+    font-weight: bold;
+    /* padding: 5px; */
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other
+  @media screen and (max-width: 600px) {
+    .column.left, .column.right {
+      width: 100%;
+    }
+  } */
+  
